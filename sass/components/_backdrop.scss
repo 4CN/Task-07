@@ -22,9 +22,7 @@
 .modal h2 {
   font-family: var(--primary-font-family);
   font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(20px, 700, 23px);
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -58,9 +56,7 @@
   margin-bottom: 10px;
   font-family: var(--primary-font-family);
   font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  @include font(12px, 400, 14px);
   letter-spacing: 0.01em;
   color: #757575;
 }
@@ -77,15 +73,11 @@
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 5px;
-}
 
-.contact-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-
-.contact-form-input:focus + .contact-form-icon {
-  fill: var(--accent-color);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .contact-form-icon {
@@ -96,6 +88,10 @@
   transition: fill 250ms var(--project-timing);
 }
 
+.contact-form-input:focus + .contact-form-icon {
+  fill: var(--accent-color);
+}
+
 .contact-form-message {
   width: 100%;
   height: 100px;
@@ -104,11 +100,11 @@
   resize: none;
   border: 1px solid #555555;
   border-radius: 5px;
-}
 
-.contact-form-message:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .contact-form-checkbox-wrapper {
@@ -121,6 +117,17 @@
   display: flex;
   font-size: 14px;
   margin-bottom: 30px;
+
+  &::before {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #212121;
+    border-radius: 4px;
+    cursor: pointer;
+    content: "";
+    margin-right: 10px;
+  }
 }
 
 .contact-form-checkbox:hover + .contact-form-checkbox-label::before,
@@ -133,15 +140,4 @@
   background-image: url(../img/check-icon.svg);
   background-size: contain;
   background-origin: border-box;
-}
-
-.contact-form-checkbox-label::before {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #212121;
-  border-radius: 4px;
-  cursor: pointer;
-  content: "";
-  margin-right: 10px;
 }

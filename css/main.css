@@ -62,8 +62,8 @@ a {
 
 .logo-dark {
   font-family: var(--secondary-font-family);
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
@@ -72,8 +72,8 @@ a {
 
 .logo-white {
   font-family: var(--secondary-font-family);
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -88,8 +88,8 @@ a {
 .contact-form-submit-btn {
   display: block;
   font-family: var(--primary-font-family);
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.09em;
   cursor: pointer;
@@ -105,18 +105,18 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-
-.modal-btn:hover,
-.modal-btn:focus,
+.modal-btn:hover, .modal-btn:focus,
 .subscribe-btn:hover,
-.subscribe-btn:focus {
+.subscribe-btn:focus,
+.contact-form-submit-btn:hover,
+.contact-form-submit-btn:focus {
   background-color: #188ce8;
   color: #ffffff;
 }
 
 .active {
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--accent-color);
@@ -125,19 +125,11 @@ a {
 .todo-title,
 .team-title,
 .client-title {
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.project-name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
   color: #212121;
 }
 
@@ -171,9 +163,7 @@ a {
   -webkit-transition: fill 250ms var(--project-timing), background-color 250ms var(--project-timing);
   transition: fill 250ms var(--project-timing), background-color 250ms var(--project-timing);
 }
-
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list-link:hover, .social-list-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -228,8 +218,8 @@ a {
 .modal h2 {
   font-family: var(--primary-font-family);
   font-style: normal;
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
@@ -270,8 +260,8 @@ a {
   margin-bottom: 10px;
   font-family: var(--primary-font-family);
   font-style: normal;
-  font-weight: 400;
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #757575;
@@ -290,14 +280,9 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 5px;
 }
-
 .contact-form-input:focus {
   outline: none;
   border-color: var(--accent-color);
-}
-
-.contact-form-input:focus + .contact-form-icon {
-  fill: var(--accent-color);
 }
 
 .contact-form-icon {
@@ -310,6 +295,10 @@ a {
   transition: fill 250ms var(--project-timing);
 }
 
+.contact-form-input:focus + .contact-form-icon {
+  fill: var(--accent-color);
+}
+
 .contact-form-message {
   width: 100%;
   height: 100px;
@@ -319,7 +308,6 @@ a {
   border: 1px solid #555555;
   border-radius: 5px;
 }
-
 .contact-form-message:focus {
   outline: none;
   border-color: var(--accent-color);
@@ -342,6 +330,16 @@ a {
   font-size: 14px;
   margin-bottom: 30px;
 }
+.contact-form-checkbox-label::before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #212121;
+  border-radius: 4px;
+  cursor: pointer;
+  content: "";
+  margin-right: 10px;
+}
 
 .contact-form-checkbox:hover + .contact-form-checkbox-label::before,
 .contact-form-checkbox:focus + .contact-form-checkbox-label::before {
@@ -353,17 +351,6 @@ a {
   background-image: url(../img/check-icon.svg);
   background-size: contain;
   background-origin: border-box;
-}
-
-.contact-form-checkbox-label::before {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #212121;
-  border-radius: 4px;
-  cursor: pointer;
-  content: "";
-  margin-right: 10px;
 }
 
 .header {
@@ -411,16 +398,14 @@ a {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
   font-size: 14px;
-  line-height: 1.1;
+  font-weight: 500;
+  line-height: 1.14;
   color: var(--primary-text-color);
   -webkit-transition: color 250ms linear;
   transition: color 250ms linear;
 }
-
-.nav-link:hover,
-.nav-link:focus {
+.nav-link:hover, .nav-link:focus {
   color: var(--accent-color);
 }
 
@@ -453,8 +438,8 @@ a {
 }
 
 .contact-number {
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -498,8 +483,8 @@ a {
 }
 
 .hero-description {
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
@@ -551,8 +536,8 @@ a {
 }
 
 .advantages-master-text {
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -560,8 +545,8 @@ a {
 }
 
 .advantages-slave-text {
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -580,21 +565,20 @@ a {
   gap: 30px;
 }
 
-.todo-description:not(:nth-child(3n)) {
-  -ms-flex-preferred-size: calc((100% - 90px) / 3);
-      flex-basis: calc((100% - 90px) / 3);
-}
-
 .todo-description {
   position: relative;
   display: block;
   font-style: normal;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 1.1;
+  font-weight: 700;
+  line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+.todo-description:not(:nth-child(3n)) {
+  -ms-flex-preferred-size: calc((100% - 90px) / 3);
+      flex-basis: calc((100% - 90px) / 3);
 }
 
 .todo-description .todo-img-description {
@@ -633,12 +617,10 @@ a {
 
 .team-description {
   background: #ffffff;
-  /* material shadow v1 */
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .team-description:not(:nth-child(4n)) {
   -ms-flex-preferred-size: calc((100% - 120px) / 4);
       flex-basis: calc((100% - 120px) / 4);
@@ -653,8 +635,8 @@ a {
 
 .team-name {
   margin-bottom: 10px;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
@@ -668,9 +650,9 @@ a {
 
 .name-description,
 .project-description {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  font-weight: 400;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -707,16 +689,14 @@ a {
   -webkit-transition: border 250ms var(--project-timing);
   transition: border 250ms var(--project-timing);
 }
+.client-list-link:hover, .client-list-link:focus {
+  border: 1px solid var(--accent-color);
+}
 
 .client-list-icon {
   fill: #afb1b8;
   -webkit-transition: fill 250ms var(--project-timing);
   transition: fill 250ms var(--project-timing);
-}
-
-.client-list-link:hover,
-.client-list-link:focus {
-  border: 1px solid var(--accent-color);
 }
 
 .client-list-link:hover .client-list-icon,
@@ -765,17 +745,15 @@ a {
 
 .address-map {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
   -webkit-transition: color 250ms var(--project-timing);
   transition: color 250ms var(--project-timing);
 }
-
-.address-map:hover,
-.address-map:focus {
+.address-map:hover, .address-map:focus {
   color: var(--accent-color);
 }
 
@@ -786,8 +764,8 @@ a {
 
 .address-link {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -795,9 +773,7 @@ a {
   -webkit-transition: color 250ms var(--project-timing);
   transition: color 250ms var(--project-timing);
 }
-
-.address-link:hover,
-.address-link:focus {
+.address-link:hover, .address-link:focus {
   color: var(--accent-color);
 }
 
@@ -807,8 +783,8 @@ a {
 
 .footer-social h2,
 .mail-subscribe h2 {
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -840,9 +816,7 @@ a {
   -webkit-transition: fill 250ms var(--project-timing), background-color 250ms var(--project-timing);
   transition: fill 250ms var(--project-timing), background-color 250ms var(--project-timing);
 }
-
-.footer-social-list-link:hover,
-.footer-social-list-link:focus {
+.footer-social-list-link:hover, .footer-social-list-link:focus {
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -872,8 +846,8 @@ a {
   background-color: #2f303a;
   padding-left: 16px;
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -916,8 +890,8 @@ a {
   min-height: 38px;
   font-family: var(--primary-font-family);
   font-style: normal;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
@@ -928,14 +902,26 @@ a {
   -webkit-transition: color 250ms var(--project-timing), background-color 250ms var(--project-timing);
   transition: color 250ms var(--project-timing), background-color 250ms var(--project-timing);
 }
+.filter-btn:hover, .filter-btn:focus {
+  background-color: var(--accent-color);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+}
 
-.filter-btn:hover,
-.filter-btn:focus,
 .active-btn {
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   color: #ffffff;
+}
+
+.project-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
 }
 
 .project-card {
@@ -953,11 +939,9 @@ a {
       flex-basis: calc((100% - 90px) / 3);
   margin-right: 30px;
 }
-
 .project-card-detail:not(:nth-last-child(-n+3)) {
   margin-bottom: 30px;
 }
-
 .project-card-detail:hover a {
   display: block;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1007,8 +991,8 @@ a {
 .overlay p {
   font-family: var(--primary-font-family);
   font-style: normal;
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.56;
   letter-spacing: 0.03em;
   background-color: rgba(33, 150, 243, 0.9);

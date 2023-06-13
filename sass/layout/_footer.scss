@@ -15,17 +15,15 @@
 
 .address-map {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(14px, 400, 24px);
   letter-spacing: 0.03em;
   color: #ffffff;
   transition: color 250ms var(--project-timing);
-}
 
-.address-map:hover,
-.address-map:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .address-detail {
@@ -35,18 +33,16 @@
 
 .address-link {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(14px, 400, 24px);
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--project-timing);
-}
 
-.address-link:hover,
-.address-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-social {
@@ -55,9 +51,7 @@
 
 .footer-social h2,
 .mail-subscribe h2 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 700, 16px);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -79,12 +73,12 @@
   background-color: rgba(255, 255, 255, 0.1);
   transition: fill 250ms var(--project-timing),
     background-color 250ms var(--project-timing);
-}
 
-.footer-social-list-link:hover,
-.footer-social-list-link:focus {
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 }
 
 .footer-social-list-link:hover .social-icon,
@@ -109,9 +103,7 @@
   background-color: #2f303a;
   padding-left: 16px;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(16px, 400, 20px);
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);

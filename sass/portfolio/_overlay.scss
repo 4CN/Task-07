@@ -20,9 +20,7 @@
 .overlay p {
   font-family: var(--primary-font-family);
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
+  @include font(18px, 400, 28px);
   letter-spacing: 0.03em;
   background-color: rgba(33, 150, 243, 0.9);
   color: #ffffff;

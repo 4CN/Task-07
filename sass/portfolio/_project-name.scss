@@ -1,7 +1,5 @@
 .project-name {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+  @include font(18px, 700, 36px);
     letter-spacing: 0.06em;
     color: #212121;
   }

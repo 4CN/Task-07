@@ -8,20 +8,18 @@
   gap: 30px;
 }
 
-.todo-description:not(:nth-child(3n)) {
-  flex-basis: calc((100% - 3 * 30px) / 3);
-}
-
 .todo-description {
   position: relative;
   display: block;
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
+  @include font(14px, 700, 16px);
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+
+  &:not(:nth-child(3n)) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
 }
 
 .todo-description .todo-img-description {

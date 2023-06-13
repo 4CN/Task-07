@@ -8,11 +8,11 @@
   background-color: #ffffff;
   transition: fill 250ms var(--project-timing),
     background-color 250ms var(--project-timing);
-}
 
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--accent-color);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
 }
 
 .social-list-link:hover .social-icon,

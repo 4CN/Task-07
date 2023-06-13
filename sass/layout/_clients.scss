@@ -18,16 +18,16 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border 250ms var(--project-timing);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .client-list-icon {
   fill: #afb1b8;
   transition: fill 250ms var(--project-timing);
-}
-
-.client-list-link:hover,
-.client-list-link:focus {
-  border: 1px solid var(--accent-color);
 }
 
 .client-list-link:hover .client-list-icon,
