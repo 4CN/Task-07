@@ -28,11 +28,11 @@
 .client-list-icon {
   fill: #afb1b8;
   transition: fill 250ms var(--project-timing);
-}
 
-.client-list-link:hover .client-list-icon,
-.client-list-link:focus .client-list-icon {
-  fill: var(--accent-color);
+  .client-list-link:hover &,
+  .client-list-link:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 .client-list-link-active {
@@ -43,8 +43,9 @@
   height: 92px;
   border: 1px solid var(--accent-color);
   border-radius: 4px;
+
+  & .client-list-icon {
+    fill: var(--accent-color);
+  }  
 }
 
-.client-list-link-active .client-list-icon {
-  fill: var(--accent-color);
-}

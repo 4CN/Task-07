@@ -64,34 +64,39 @@
 .mail-address {
   margin-right: 50px;
   color: #757575;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:hover .address-icon,
+  &:focus .address-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .contact-number {
   @include font(14px, 500, 16px);
   letter-spacing: 0.02em;
   color: #757575;
-}
 
-.mail-address:hover .address-icon,
-.mail-address:focus .address-icon {
-  fill: var(--accent-color);
-}
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 
-.contact-number:hover .address-icon,
-.contact-number:focus .address-icon {
-  fill: var(--accent-color);
-}
-
-.contact-number:hover,
-.contact-number:focus,
-.mail-address:hover,
-.mail-address:focus {
-  color: var(--accent-color);
+  &:hover .address-icon,
+  &:focus .address-icon {
+    fill: var(--accent-color);
+  }
 }
 
 .mail-active {
   color: var(--accent-color);
+
+  & .address-icon {
+    fill: var(--accent-color);
+  }
 }
-.mail-active .address-icon {
-  fill: var(--accent-color);
-}
+

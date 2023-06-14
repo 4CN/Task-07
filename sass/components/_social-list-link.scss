@@ -9,15 +9,15 @@
   transition: fill 250ms var(--project-timing),
     background-color 250ms var(--project-timing);
 
-    &:hover,
-    &:focus {
-      background-color: var(--accent-color);
-    }
-}
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 
-.social-list-link:hover .social-icon,
-.social-list-link:focus .social-icon {
-  fill: #ffffff;
+  &:hover .social-icon,
+  &:focus .social-icon {
+    fill: #ffffff;
+  }
 }
 
 .social-list-link-active {
@@ -28,8 +28,8 @@
   align-items: center;
   justify-content: center;
   background-color: var(--accent-color);
-}
 
-.social-list-link-active .social-icon {
-  fill: #ffffff;
+  & .social-icon {
+    fill: #ffffff;
+  }
 }
